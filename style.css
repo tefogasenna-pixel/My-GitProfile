@@ -1,21 +1,58 @@
+/* General Styles - Task 3  */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif; /* [cite: 58] */
+    line-height: 1.6;
+    color: #333;
 }
 
 h2 {
-    color: #007bff;
+    color: #5227FF; /* Matches your liquid theme [cite: 61] */
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Liquid Navigation Bar Styling [cite: 54] */
+.liquid-nav {
+    /* Uses your image and the ReactBits color palette  */
+    background: linear-gradient(-45deg, 
+                rgba(82, 39, 255, 0.75), 
+                rgba(255, 159, 252, 0.75), 
+                rgba(177, 158, 239, 0.75)),
+                url('images/Abbie.jpg'); /*  */
+    
+    background-size: 400% 400%, cover;
+    background-position: center;
+    animation: liquidGradient 12s ease infinite;
+    padding: 12px 0; /* Task 3 Padding requirement [cite: 70] */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-ul li {
-    background: transparent;
-    padding: 10px;
-    margin: 5px 0;
-   
+/* The Animation logic for the 'Liquid' feel */
+@keyframes liquidGradient {
+    0% { background-position: 0% 50%, center; }
+    50% { background-position: 100% 50%, center; }
+    100% { background-position: 0% 50%, center; }
+}
 
+/* Button Component Styles [cite: 91] */
+.navbar-nav .btn {
+    margin: 0 5px; /* Task 3 Margin requirement [cite: 71] */
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(82, 39, 255, 0.4);
+}
+
+/* Section Formatting [cite: 55] */
+section {
+    padding: 60px 0; /* Task 3 Padding requirement [cite: 70] */
+}
+
+#about {
+    background: #ffffff;
+    border-left: 5px solid #5227FF; /* Customizing the reference border [cite: 72] */
+    margin: 20px 0; /* Task 3 Margin requirement [cite: 71] */
 }
 
