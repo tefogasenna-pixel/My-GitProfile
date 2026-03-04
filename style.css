@@ -1,13 +1,18 @@
 body {
-    font-family: 'Segoe UI', Arial, sans-serif; /* [cite: 58] */
+    font-family: 'Segoe UI', Arial, sans-serif; 
     line-height: 1.6;
     color: #333;
 }
 
+
 h2 {
-    color: #5227FF; /* Matches your liquid theme [cite: 61] */
+    color: #5227FF; 
     margin-bottom: 20px;
+    border-bottom: 2px solid #5227FF; 
+    padding-bottom: 10px;
+    display: inline-block; 
 }
+
 
 .liquid-nav {
     background: linear-gradient(-45deg, 
@@ -29,7 +34,6 @@ h2 {
     100% { background-position: 0% 50%, center; }
 }
 
-
 .navbar-nav .btn {
     margin: 0 5px; 
     border-radius: 30px;
@@ -41,15 +45,16 @@ h2 {
     box-shadow: 0 4px 15px rgba(82, 39, 255, 0.4);
 }
 
-
 section {
     padding: 60px 0; 
 }
 
-#about {
+
+#about, #education {
     background: #ffffff;
     border-left: 5px solid #5227FF; 
     margin: 20px 0; 
+    padding-left: 20px; 
 }
 
 
